@@ -1,0 +1,39 @@
+#container {
+  width: 100%;
+}
+
+#main {
+  width: 300px;
+  height: 480px;
+  background-color: #efefef;
+}
+
+#main .name {
+  width: 100%;
+  height: 40px;
+}
+#main .name p {
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  float: left;
+}
+
+#main .img {
+  width: 240px;
+  height: 315px;
+  padding-left: 30px;
+}
+
+#main .img img {
+  width: 100%;
+}
+
+#main .desc {
+  width: 240px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
