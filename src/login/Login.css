@@ -1,0 +1,9 @@
+.Login-form {
+  display: block !important;
+}
+
+.Login-form-container {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}

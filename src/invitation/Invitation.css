@@ -1,6 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+
 #container {
   width: 100%;
 }
+
+/*################ main ################*/
 
 #main {
   width: 300px;
@@ -36,4 +50,76 @@
   text-align: center;
   padding-top: 20px;
   font-size: 15px;
+}
+
+/*################# parent #################*/
+
+#parent {
+  width: 300px;
+}
+#parent .img {
+  width: 100%;
+}
+#parent .img img {
+  width: 100%;
+}
+
+#parent #nameBox {
+  width: 100%;
+}
+#nameBox .name {
+  width: 100%;
+}
+#nameBox .name .indi {
+  width: 90%;
+  font-size: 25px;
+}
+#nameBox .name .indi .gray {
+  font-size: 16px;
+  color: gray;
+}
+#nameBox .name .phone {
+  width: 10%;
+}
+#nameBox .name .phone img {
+  width: 100%;
+}
+
+#nameBox .contact {
+  border: 1px solid red;
+}
+#nameBox .contact a {
+}
+
+/*##################### gallery #####################*/
+#gallery {
+  width: 300px;
+}
+#gallery h3 {
+  font-size: 30px;
+  color: #caf;
+  text-align: center;
+  padding: 50px 0;
+}
+#gallery ul {
+  width: 100%;
+}
+#gallery ul li {
+  width: 90px;
+  margin-left: 10px;
+
+  float: left;
+}
+#gallery li a {
+  display: block;
+  width: 90px;
+}
+#gallery li a img {
+  width: 100%;
+}
+
+#gallery ul:after {
+  content: "";
+  display: block;
+  clear: both;
 }

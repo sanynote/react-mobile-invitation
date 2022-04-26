@@ -35,10 +35,31 @@ function Invitation() {
 
         <div id="parent">
           <p class="img">
-            <img src="" alt="" />
+            <img src="/img/main.webp" alt="" />
           </p>
-          <div class="nameArea">
-            <div></div>
+          <div id="nameBox">
+            <div class="name">
+              <p class="indi">
+                김치범 , 서은주<span class="gray">의 딸</span>김선지
+              </p>
+              <p class="phone">
+                <img src="" alt="" />
+              </p>
+            </div>
+            <div class="name">
+              <p class="indi">
+                이훈아, 송혜경<span class="gray">의 아들</span>이호냐
+              </p>
+              <p class="phone">
+                <img src="" alt="" />
+              </p>
+            </div>
+
+            <p class="contact">
+              <a href="#" title="부모님연락처">
+                혼주에게 연락하기
+              </a>
+            </p>
           </div>
         </div>
 
