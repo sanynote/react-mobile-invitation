@@ -1,27 +1,31 @@
 import "./Invitation.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Map from "./Map";
+import React, { useEffect, useState } from "react";
 
 function Invitation() {
   return (
     <div id="wrap">
       <div id="container">
         <div id="main">
-          <div class="name">
+          <div className="name">
             <p>이영훈</p>
             <p>이알냐</p>
             <p>김선지</p>
           </div>
-          <p class="img">
+          <p className="img">
             <img src="/img/main.webp" alt="메인이미지" />
           </p>
-          <p class="desc">
+          <p className="desc">
             2022년 10월 22일 토요일 오후 1시 <br />
             마드로나 광화문로 오도라홀 2층
           </p>
         </div>
 
+        {/* <div id="map"></div> */}
+        <Map></Map>
         <div id="letter">
-          <p class="flower">
+          <p className="flower">
             <img src="/img/i0.png" alt="꽃 이미지" />
           </p>
           <p>
@@ -34,28 +38,28 @@ function Invitation() {
         </div>
 
         <div id="parent">
-          <p class="img">
+          <p className="img">
             <img src="/img/main.webp" alt="" />
           </p>
           <div id="nameBox">
-            <div class="name">
-              <p class="indi">
-                김치범 , 서은주<span class="gray">의 딸</span>김선지
+            <div className="name">
+              <p className="indi">
+                김치범 , 서은주<span className="gray">의 딸</span>김선지
               </p>
-              <p class="phone">
+              <p className="phone">
                 <img src="" alt="" />
               </p>
             </div>
-            <div class="name">
-              <p class="indi">
-                이훈아, 송혜경<span class="gray">의 아들</span>이호냐
+            <div className="name">
+              <p className="indi">
+                이훈아, 송혜경<span className="gray">의 아들</span>이호냐
               </p>
-              <p class="phone">
+              <p className="phone">
                 <img src="" alt="" />
               </p>
             </div>
 
-            <p class="contact">
+            <p className="contact">
               <a href="#" title="부모님연락처">
                 혼주에게 연락하기
               </a>
