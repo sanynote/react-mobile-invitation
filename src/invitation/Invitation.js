@@ -26,12 +26,18 @@ function Invitation() {
         <Map></Map>
         <div id="letter">
           <p className="flower">
-            <img src="/img/i0.png" alt="꽃 이미지" />
+            <img src="/img/flower.jpeg" alt="꽃 이미지" />
           </p>
-          <p>
-            서로의 이름을 부르는 것 만으로도 사랑의 깊이를 확인할 수 있는 두
-            사람이 꽃과 나무처럼 걸어와서 서로의 모든것이 되기위해 오랜 기다림
-            끝에 혼례식을 치르는 날<br />
+          <p className="text">
+            서로의 이름을 <br />
+            부르는 것 만으로도
+            <br /> 사랑의 깊이를 확인할 수 있는
+            <br /> 두 사람이
+            <br /> 꽃과 나무처럼 걸어와서
+            <br /> 서로의 모든것이 되기위해
+            <br /> 오랜 기다림 끝에
+            <br /> 혼례식을 치르는 날<br />
+            <br />
             <br />
             세상은 더욱 아름다워라
           </p>
