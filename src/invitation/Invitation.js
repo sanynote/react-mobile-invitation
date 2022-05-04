@@ -26,7 +26,7 @@ function Invitation() {
         <Map></Map>
         <div id="letter">
           <p className="flower">
-            <img src="/img/flower.jpeg" alt="꽃 이미지" />
+            <img src="/img/main.webp" alt="꽃 이미지" />
           </p>
           <p className="text">
             서로의 이름을 <br />
