@@ -10,7 +10,7 @@ function Invitation() {
         <div id="main">
           <div className="name">
             <p>이영훈</p>
-            <p>이알냐</p>
+            <p>10/22</p>
             <p>김선지</p>
           </div>
           <p className="img">
@@ -25,9 +25,7 @@ function Invitation() {
         {/* <div id="map"></div> */}
         <Map></Map>
         <div id="letter">
-          <p className="flower">
-            <img src="/img/main.webp" alt="꽃 이미지" />
-          </p>
+          <p className="flower"></p>
           <p className="text">
             서로의 이름을 <br />
             부르는 것 만으로도
@@ -52,17 +50,13 @@ function Invitation() {
               <p className="indi">
                 김치범 , 서은주<span className="gray">의 딸</span>김선지
               </p>
-              <p className="phone">
-                <img src="" alt="" />
-              </p>
+              <p className="phone"></p>
             </div>
             <div className="name">
               <p className="indi">
                 이훈아, 송혜경<span className="gray">의 아들</span>이호냐
               </p>
-              <p className="phone">
-                <img src="" alt="" />
-              </p>
+              <p className="phone"></p>
             </div>
 
             <p className="contact">
