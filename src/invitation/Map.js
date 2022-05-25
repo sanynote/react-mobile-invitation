@@ -67,13 +67,6 @@ const Map = () => {
   return (
     <div>
       <div>{sunny}</div>
-      <button
-        onClick={() => {
-          setSunny(sunny + 1);
-        }}
-      >
-        click!
-      </button>
       <div id="myMap" style={{ width: "300px", height: "400px" }}></div>
     </div>
   );
