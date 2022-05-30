@@ -1,5 +1,4 @@
 import "./Invitation.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Map from "./Map";
 import React, { useEffect, useState } from "react";
 

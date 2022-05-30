@@ -1,0 +1,83 @@
+/*
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+*/
+
+@font-face {
+  font-family: "dongle";
+  src: url("../fonts/NanumBrushScript-Regular.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "dongle";
+}
+
+a:link,
+a:focus {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+#wrap {
+  min-width: 480px;
+  width: 100%;
+  padding-top: 50px;
+}
+h3 {
+  font-size: 28px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+#info {
+  width: 480px;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+#info li {
+  list-style: none;
+  line-height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 2px;
+}
+
+#info label {
+  display: inline-block;
+  width: 205px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #efefef;
+  text-align: center;
+  vertical-align: center;
+}
+#info input {
+  width: 250px;
+  height: 35px;
+  text-indent: 10px;
+  outline: none;
+}
+
+#info .btn {
+  width: 85px;
+  margin: 20px auto 0;
+}
+
+#info input[type="submit"] {
+  width: 85px;
+  text-indent: 0;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
