@@ -42,7 +42,7 @@ function Invitation() {
 
         <div id="parent">
           <p className="img">
-            <img src="/img/main.webp" alt="" />
+            <img src="/img/wedding.jpeg" alt="메인이미지" />
           </p>
           <div id="nameBox">
             <div className="name">
@@ -60,7 +60,7 @@ function Invitation() {
 
             <p className="contact">
               <a href="#" title="부모님연락처">
-                혼주에게 연락하기
+                혼주 번호 : 010-123-4567
               </a>
             </p>
           </div>
@@ -71,47 +71,47 @@ function Invitation() {
           <ul>
             <li>
               <a href="#" title="갤러리이미지0">
-                <img src="/img/main.webp" alt="메인이미지" />
+                <img src="img/wedding0.jpeg" alt="메인이미지" />
               </a>
             </li>
             <li>
               <a href="#" title="갤러리이미지0">
-                <img src="/img/main.webp" alt="메인이미지" />
+                <img src="img/wedding1.jpeg" alt="메인이미지" />
               </a>
             </li>
             <li>
               <a href="#" title="갤러리이미지0">
-                <img src="/img/main.webp" alt="메인이미지" />
+                <img src="img/wedding2.jpeg" alt="메인이미지" />
               </a>
             </li>
             <li>
               <a href="#" title="갤러리이미지0">
-                <img src="/img/main.webp" alt="메인이미지" />
+                <img src="img/wedding3.jpeg" alt="메인이미지" />
               </a>
             </li>
             <li>
               <a href="#" title="갤러리이미지0">
-                <img src="/img/main.webp" alt="메인이미지" />
+                <img src="img/wedding4.jpeg" alt="메인이미지" />
               </a>
             </li>
             <li>
               <a href="#" title="갤러리이미지0">
-                <img src="/img/main.webp" alt="메인이미지" />
+                <img src="img/wedding5.jpeg" alt="메인이미지" />
               </a>
             </li>
             <li>
               <a href="#" title="갤러리이미지0">
-                <img src="/img/main.webp" alt="메인이미지" />
+                <img src="img/wedding6.jpeg" alt="메인이미지" />
               </a>
             </li>
             <li>
               <a href="#" title="갤러리이미지0">
-                <img src="/img/main.webp" alt="메인이미지" />
+                <img src="img/wedding7.jpeg" alt="메인이미지" />
               </a>
             </li>
             <li>
               <a href="#" title="갤러리이미지0">
-                <img src="/img/main.webp" alt="메인이미지" />
+                <img src="img/wedding8.jpeg" alt="메인이미지" />
               </a>
             </li>
           </ul>
