@@ -4,17 +4,13 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 function Information() {
-  const [age, setAge] = React.useState("11");
-
   const url = new URL(window.location.href);
 
   let query = window.location.search;
   let param = new URLSearchParams(query);
+
   let phone = param.get("phone");
   let userPass = param.get("userPass");
-
-  console.log("phone:", param.get("phone"));
-  console.log("userPass:", param.get("userPass"));
 
   const [information, setInformation] = React.useState({
     phone: phone,
