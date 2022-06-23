@@ -5,9 +5,6 @@ import { Link } from "react-router-dom";
 
 function Login() {
   const createUser = async () => {
-    // const userId = document.getElementById("userId").value;
-    // const userPass = document.getElementById("userPass").value;
-
     const response = await axios.post("http://localhost:8080/signup", {
       userName: phone,
       userPass: userPass,
@@ -18,7 +15,7 @@ function Login() {
   const [userPass, setUserPass] = React.useState("");
 
   const test1 = (e) => {
-    console.log("event.target.value??:", e.target.value);
+    console.log("change:", e.target.value);
     setPhone(e.target.value);
   };
 

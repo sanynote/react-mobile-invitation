@@ -28,8 +28,8 @@ li {
 
 #wrap {
   min-width: 480px;
-  width: 100%;
-  padding-top: 50px;
+  width: 100vw;
+  padding: 50px 0;
 }
 h3 {
   font-size: 28px;
@@ -38,44 +38,44 @@ h3 {
 }
 
 #info {
-  width: 480px;
+  width: 370px;
   padding: 10px;
-  margin: 20px;
+
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 0 auto;
 }
 
 #info li {
+  width: 350px;
   list-style: none;
   line-height: 30px;
   padding: 5px 10px;
   margin-bottom: 2px;
+  background-color: #eeaaae21;
 }
 
 #info label {
   display: inline-block;
-  width: 205px;
+  width: 120px;
   height: 35px;
   line-height: 35px;
-  background-color: #efefef;
+
   text-align: center;
   vertical-align: center;
 }
 #info input {
-  width: 250px;
+  width: 225px;
   height: 35px;
   text-indent: 10px;
   outline: none;
 }
 
-#info .btn {
+button {
+  display: block;
   width: 85px;
-  margin: 20px auto 0;
-}
-
-#info input[type="submit"] {
-  width: 85px;
+  height: 30px;
+  margin: 10px auto 0;
   text-indent: 0;
   border-radius: 20px;
   border: none;

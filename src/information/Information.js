@@ -1,13 +1,24 @@
 import * as React from "react";
 import "./Information.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Information() {
   const [age, setAge] = React.useState("11");
 
+  const url = new URL(window.location.href);
+
+  let query = window.location.search;
+  let param = new URLSearchParams(query);
+  let phone = param.get("phone");
+  let userPass = param.get("userPass");
+
+  console.log("phone:", param.get("phone"));
+  console.log("userPass:", param.get("userPass"));
+
   const [information, setInformation] = React.useState({
-    phone: "",
-    password: "",
+    phone: phone,
+    password: userPass,
     manName: "",
     womanName: "",
     manFather: "",
@@ -43,7 +54,7 @@ function Information() {
       <div id="wrap">
         <h3>고객정보 입력</h3>
         {/* <form id="info" action="#none" method="get"> */}
-        <ul>
+        <ul id="info">
           <li>
             <label for="mn">신랑이름: </label>
             <input id="mn" type="text" name="manName" onChange={sun} />
@@ -55,6 +66,14 @@ function Information() {
           <li>
             <label for="date">결혼식 날짜: </label>
             <input id="date" type="text" name="date" onChange={sun} />
+          </li>
+          <li>
+            <label for="time">결혼식 시간: </label>
+            <input id="time" type="text" name="time" onChange={sun} />
+          </li>
+          <li>
+            <label for="text">결혼식 글귀: </label>
+            <input id="text" type="text" name="text" onChange={sun} />
           </li>
           <li>
             <label for="mfn">신랑아버지성함: </label>
@@ -90,8 +109,10 @@ function Information() {
               />
             </li> */}
         </ul>
-        <button onClick={create}>제작하기</button>
         {/* </form> */}
+        <Link to={`/invitation?information=${information}`}>
+          <button onClick={create}>제작하기</button>
+        </Link>
       </div>
     </>
   );
