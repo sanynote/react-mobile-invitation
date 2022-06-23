@@ -1,75 +1,32 @@
 import * as React from "react";
-import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
-import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
-import LocalPhone from "@mui/icons-material/LocalPhone";
-import Visibility from "@mui/icons-material/Visibility";
-import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
 import axios from "axios";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 function Login() {
   const createUser = async () => {
     // const userId = document.getElementById("userId").value;
     // const userPass = document.getElementById("userPass").value;
-    console.log("userId!!", userId);
-    console.log("userPass!!", userPass);
 
     const response = await axios.post("http://localhost:8080/signup", {
-      userName: userId,
+      userName: phone,
       userPass: userPass,
     });
-
-    console.log("response??", response);
   };
 
-  const [userId, setUserId] = React.useState("");
+  const [phone, setPhone] = React.useState("");
   const [userPass, setUserPass] = React.useState("");
 
-  const halo = async () => {
-    console.log(userId);
-    console.log(userPass);
-    // document.write(userId);
-    // document.write(userPass);
+  const test1 = (e) => {
+    console.log("event.target.value??:", e.target.value);
+    setPhone(e.target.value);
   };
 
-  const userIdChange = (e) => {
-    setUserId(e.target.value);
-  };
-
-  const userPassChange = (e) => {
+  const test2 = (e) => {
+    console.log("event.target.value??:", e.target.value);
     setUserPass(e.target.value);
   };
 
-  const [values, setValues] = React.useState({
-    amount: "",
-    password: "",
-    weight: "",
-    weightRange: "",
-    showPassword: false,
-  });
-
-  const handleChange = (prop) => (event) => {
-    // 1. values setting
-    setValues({ ...values, [prop]: event.target.value });
-
-    // 2. userPass setting
-    setUserPass(event.target.value);
-  };
-
-  const handleClickShowPassword = () => {
-    setValues({
-      ...values,
-      showPassword: !values.showPassword,
-    });
-  };
-
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
   return (
     <>
       <div id="wrap">
@@ -80,7 +37,7 @@ function Login() {
               <legend>Your detalis</legend>
               <ol>
                 <li>
-                  <label for="phone">전화번호: </label>
+                  <label htmlFor="phone">전화번호: </label>
                   <input
                     id="phone"
                     type="tel"
@@ -89,17 +46,26 @@ function Login() {
                     placeholder="010-123-4567"
                     pattern="\d{3}-\d{3,4}-\d{4}"
                     title=" '─' 을 넣고 입력"
+                    onChange={test1}
                   />
                 </li>
                 <li>
-                  <label for="userpw">비밀번호: </label>
-                  <input id="userpw" type="text" name="userpw" required />
+                  <label htmlFor="userPass">비밀번호: </label>
+                  <input
+                    id="userPass"
+                    type="text"
+                    name="userPass"
+                    required
+                    onChange={test2}
+                  />
                 </li>
               </ol>
             </fieldset>
 
             <fieldset>
-              <button type="submit">제작하기</button>
+              <Link to={`/information?phone=${phone}&userPass=${userPass}`}>
+                <button type="submit">제작하기</button>
+              </Link>
             </fieldset>
           </form>
         </div>

@@ -8,9 +8,9 @@ function Invitation() {
       <div id="container">
         <div id="main">
           <div className="name">
-            <p>이영훈</p>
+            <p>이훈영</p>
             <p>10/22</p>
-            <p>김선지</p>
+            <p>유이아</p>
           </div>
           <p className="img">
             <img src="/img/main.webp" alt="메인이미지" />
@@ -47,13 +47,13 @@ function Invitation() {
           <div id="nameBox">
             <div className="name">
               <p className="indi">
-                김치범 , 서은주<span className="gray">의 딸</span>김선지
+                유규민 , 이민정<span className="gray">의 딸</span>유이아
               </p>
               <p className="phone"></p>
             </div>
             <div className="name">
               <p className="indi">
-                이훈아, 송혜경<span className="gray">의 아들</span>이호냐
+                이훈아, 송은주<span className="gray">의 아들</span>이훈영
               </p>
               <p className="phone"></p>
             </div>
