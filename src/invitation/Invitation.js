@@ -8,16 +8,18 @@ function Invitation() {
       <div id="container">
         <div id="main">
           <div className="name">
-            <p>이훈영</p>
-            <p>10/22</p>
-            <p>유이아</p>
+            <p name="manName">이훈영</p>
+            <p name="date">10/22</p>
+            <p name="womanName">유이아</p>
           </div>
           <p className="img">
             <img src="/img/main.webp" alt="메인이미지" />
           </p>
           <p className="desc">
-            2022년 10월 22일 토요일 오후 1시 <br />
-            마드로나 광화문로 오도라홀 2층
+            <span name="date">2022년 10월 22일 토요일</span>{" "}
+            <span name="time">오후 1시</span>
+            <br />
+            <span name="add1">마드로나 광화문로 오도라홀 2층</span>
           </p>
         </div>
 
@@ -25,7 +27,7 @@ function Invitation() {
         <Map></Map>
         <div id="letter">
           <p className="flower"></p>
-          <p className="text">
+          <p className="text" name="text">
             서로의 이름을 <br />
             부르는 것 만으로도
             <br /> 사랑의 깊이를 확인할 수 있는
@@ -47,13 +49,19 @@ function Invitation() {
           <div id="nameBox">
             <div className="name">
               <p className="indi">
-                유규민 , 이민정<span className="gray">의 딸</span>유이아
+                <span name="womanFather">유규민</span> ,
+                <span name="womanMother">이민정</span>
+                <span className="gray">의 띨</span>
+                <span name="womanName">유이아</span>
               </p>
               <p className="phone"></p>
             </div>
             <div className="name">
               <p className="indi">
-                이훈아, 송은주<span className="gray">의 아들</span>이훈영
+                <span name="manFather">유규민</span> ,
+                <span name="manMother">이민정</span>
+                <span className="gray">의 아들</span>
+                <span name="manName">이훈영</span>
               </p>
               <p className="phone"></p>
             </div>
