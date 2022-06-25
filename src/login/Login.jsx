@@ -28,7 +28,7 @@ function Login() {
     <>
       <div id="wrap">
         <div id="container">
-          <h2> will you marry me?? </h2>
+          <h2> will you marry me :-D </h2>
           <form id="login" action="#" method="post">
             <fieldset>
               <legend>Your detalis</legend>
