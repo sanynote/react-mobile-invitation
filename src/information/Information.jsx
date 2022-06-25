@@ -106,7 +106,8 @@ function Information() {
             </li> */}
         </ul>
         {/* </form> */}
-        <Link to={`/invitation?information=${information}`}>
+        {/*<Link to={`/invitation?information=${information}`}>*/}
+        <Link to="/invitation">
           <button onClick={create}>제작하기</button>
         </Link>
       </div>
