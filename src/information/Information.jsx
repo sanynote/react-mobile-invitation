@@ -36,13 +36,53 @@ function Information() {
   };
 
   const create = async () => {
+    //   console.log("information:", information);
+    //   const response = await axios.post("http://15.165.203.57:8080/save-info", {
+    //     information,
+    //   });
+
     console.log("information:", information);
-    const response = await axios.post("http://15.165.203.57:8080/save-info", {
-      information,
+    //   return false;
+
+    const aa1 = await axios.post("http://15.165.203.57:8080/save-info", {
+      // POST
+
+      phone: information.phone,
+      password: information.password,
+      manName: information.manName,
+      womanName: information.womanName,
+      manFather: information.manFather,
+      manMother: information.manMother,
+      womanFather: information.womanFather,
+      womanMother: information.womanMother,
+      date: information.date,
+      time: information.time,
+      add1: information.add1,
+      add2: information.add2,
+      text: information.text,
     });
 
-    console.log("res:", response);
-    return false;
+    // const aa = await axios({
+    //   method: "post",
+    //   url: "http://15.165.203.57:8080/save-info",
+    //   data: {
+    //     phone: "string1",
+    //     password: "string1",
+    //     manName: "string1",
+    //     womanName: "string1",
+    //     manFather: "string1",
+    //     manMother: "string1",
+    //     womanFather: "string",
+    //     womanMother: "string1",
+    //     date: "string",
+    //     time: "string",
+    //     add1: "string",
+    //     add2: "string",
+    //     text: "string",
+    //   },
+    // });
+
+    console.log("aa:", aa1);
   };
 
   return (
@@ -107,9 +147,9 @@ function Information() {
         </ul>
         {/* </form> */}
         {/*<Link to={`/invitation?information=${information}`}>*/}
-        <Link to="/invitation">
-          <button onClick={create}>제작하기</button>
-        </Link>
+        {/* <Link to="/invitation"> */}
+        <button onClick={create}>제작하기</button>
+        {/* </Link> */}
       </div>
     </>
   );
