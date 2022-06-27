@@ -1,25 +1,57 @@
 import "./Invitation.css";
 import Map from "./Map";
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 function Invitation() {
+  const url = new URL(window.location.href);
+
+  let query = window.location.search;
+  let param = new URLSearchParams(query);
+
+  let phone = param.get("phone");
+  let userPass = param.get("userPass");
+
+  const [information, setInformation] = React.useState({
+    phone: phone,
+    password: userPass,
+    manName: "",
+    womanName: "",
+    manFather: "",
+    manMother: "",
+    womanFather: "",
+    womanMother: "",
+    date: "",
+    time: "",
+    add1: "",
+    add2: "",
+    text: "",
+  });
+
+  useEffect(async () => {
+    const info = await axios.get(`server/${phone}/${userPass}`);
+
+    console.log("hello3", info.data);
+    setInformation(info.data);
+  }, []);
+
   return (
     <div id="wrap">
       <div id="container">
         <div id="main">
           <div className="name">
-            <p name="manName">이훈영</p>
-            <p name="date">10/22</p>
-            <p name="womanName">유이아</p>
+            <p name="manName">{information.manName}</p>
+            <p name="date">{information.date}</p>
+            <p name="womanName">{information.womanName}</p>
           </div>
           <p className="img">
             <img src="/img/main.webp" alt="메인이미지" />
           </p>
           <p className="desc">
-            <span name="date">2022년 10월 22일 토요일</span>{" "}
-            <span name="time">오후 1시</span>
+            <span name="date">{information.date}</span>{" "}
+            <span name="time">{information.time}</span>
             <br />
-            <span name="add1">마드로나 광화문로 오도라홀 2층</span>
+            <span name="add1">{information.add1}</span>
           </p>
         </div>
 
@@ -49,28 +81,24 @@ function Invitation() {
           <div id="nameBox">
             <div className="name">
               <p className="indi">
-                <span name="womanFather">유규민</span> ,
-                <span name="womanMother">이민정</span>
-                <span className="gray">의 띨</span>
-                <span name="womanName">유이아</span>
+                <span name="womanFather">{information.womanFather}</span> ,
+                <span name="womanMother">{information.womanMother}</span>
+                <span className="gray">{information.gray}</span>
+                <span name="womanName">{information.womanName}</span>
               </p>
               <p className="phone"></p>
             </div>
             <div className="name">
               <p className="indi">
-                <span name="manFather">유규민</span> ,
-                <span name="manMother">이민정</span>
-                <span className="gray">의 아들</span>
-                <span name="manName">이훈영</span>
+                <span name="manFather">{information.manFather}</span> ,
+                <span name="manMother">{information.manMother}</span>
+                <span className="gray">{information.gray}</span>
+                <span name="manName">{information.manName}</span>
               </p>
               <p className="phone"></p>
             </div>
 
-            <p className="contact">
-              <a href="#" title="부모님연락처">
-                혼주 번호 : 010-123-4567
-              </a>
-            </p>
+            <p className="contact">{phone}</p>
           </div>
         </div>
 

@@ -1,9 +1,10 @@
 import * as React from "react";
 import "./Information.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Information() {
+  let navi = useNavigate();
   const url = new URL(window.location.href);
 
   let query = window.location.search;
@@ -36,15 +37,10 @@ function Information() {
   };
 
   const create = async () => {
-    //   console.log("information:", information);
-    //   const response = await axios.post("http://15.165.203.57:8080/save-info", {
-    //     information,
-    //   });
-
     console.log("information:", information);
     //   return false;
 
-    const aa1 = await axios.post("http://15.165.203.57:8080/save-info", {
+    const aa1 = await axios.post("server", {
       // POST
 
       phone: information.phone,
@@ -62,27 +58,13 @@ function Information() {
       text: information.text,
     });
 
-    // const aa = await axios({
-    //   method: "post",
-    //   url: "http://15.165.203.57:8080/save-info",
-    //   data: {
-    //     phone: "string1",
-    //     password: "string1",
-    //     manName: "string1",
-    //     womanName: "string1",
-    //     manFather: "string1",
-    //     manMother: "string1",
-    //     womanFather: "string",
-    //     womanMother: "string1",
-    //     date: "string",
-    //     time: "string",
-    //     add1: "string",
-    //     add2: "string",
-    //     text: "string",
-    //   },
-    // });
-
     console.log("aa:", aa1);
+    navi(
+      `/invitation?phone=${information.phone}&userPass=${information.password}`
+    );
+    // history.push(
+    //   `/information?phone=${information.phone}&userPass=${information.password}`
+    // );
   };
 
   return (
