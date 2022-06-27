@@ -50,7 +50,7 @@ function Login() {
                   <label htmlFor="userPass">비밀번호: </label>
                   <input
                     id="userPass"
-                    type="text"
+                    type="password"
                     name="userPass"
                     required
                     onChange={test2}

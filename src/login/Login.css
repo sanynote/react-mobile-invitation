@@ -15,9 +15,13 @@ body {
 }
 
 #wrap {
-  min-width: 480px;
+  min-width: 320px;
   width: 100%;
   background-color: #fff;
+}
+
+form {
+  background-color: #eeaaae21;
 }
 h2 {
   font-size: 35px;

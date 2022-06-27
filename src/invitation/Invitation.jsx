@@ -83,7 +83,7 @@ function Invitation() {
               <p className="indi">
                 <span name="womanFather">{information.womanFather}</span> ,
                 <span name="womanMother">{information.womanMother}</span>
-                <span className="gray">{information.gray}</span>
+                <span className="gray">의 딸</span>
                 <span name="womanName">{information.womanName}</span>
               </p>
               <p className="phone"></p>
@@ -92,7 +92,7 @@ function Invitation() {
               <p className="indi">
                 <span name="manFather">{information.manFather}</span> ,
                 <span name="manMother">{information.manMother}</span>
-                <span className="gray">{information.gray}</span>
+                <span className="gray">의 아들</span>
                 <span name="manName">{information.manName}</span>
               </p>
               <p className="phone"></p>

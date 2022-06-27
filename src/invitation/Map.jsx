@@ -70,7 +70,10 @@ const Map = () => {
   return (
     <div>
       <div>{sunny}</div>
-      <div id="myMap" style={{ width: "300px", height: "400px" }}></div>
+      <div
+        id="myMap"
+        style={{ width: "350px", height: "400px", margin: "0 auto" }}
+      ></div>
     </div>
   );
 };
