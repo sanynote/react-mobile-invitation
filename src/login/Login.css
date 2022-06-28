@@ -19,7 +19,9 @@ body {
   width: 100%;
   background-color: #fff;
 }
-
+#container {
+  background-color: #fff;
+}
 form {
   background-color: #eeaaae21;
 }

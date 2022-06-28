@@ -29,7 +29,7 @@ function Invitation() {
   });
 
   useEffect(async () => {
-    const info = await axios.get(`server/${phone}/${userPass}`);
+    const info = await axios.get(`/${phone}/${userPass}`);
 
     console.log("hello3", info.data);
     setInformation(info.data);
@@ -37,7 +37,7 @@ function Invitation() {
 
   return (
     <div id="wrap">
-      <div id="container">
+      <div id="content">
         <div id="main">
           <div className="name">
             <p name="manName">{information.manName}</p>
