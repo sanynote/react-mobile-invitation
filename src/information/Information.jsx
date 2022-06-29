@@ -40,7 +40,7 @@ function Information() {
     console.log("information:", information);
     //   return false;
 
-    const aa1 = await axios.post("", {
+    const aa1 = await axios.post("server", {
       // POST
 
       phone: information.phone,
